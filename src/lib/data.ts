@@ -46,7 +46,7 @@ export const experiences = [
       "Built USSD banking module for loan management",
       "Built parking management system (Next.js + Spring Boot)",
     ],
-    technologies: ["Spring Boot", "Java", "Next.js", "Kafka", "PostgreSQL", "Docker", "Microservices"],
+    technologies: ["Spring Boot", "Java", "Groovy", "NestJS", "Next.js", "Kafka", "PostgreSQL", "Docker", "Microservices"],
   },
   {
     company: "Mindsight Performance Institute (MPI)",
@@ -74,7 +74,7 @@ export const experiences = [
       "Full-stack enterprise application development",
       "Performance optimization and architectural decisions",
     ],
-    technologies: ["Java", "Groovy", "React", "NestJS", "PHP", "MySQL", "Docker"],
+    technologies: ["PHP", "MySQL", "Docker", "Joomla", "WordPress"],
   },
   {
     company: "Safaricom ET",
