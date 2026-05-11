@@ -229,9 +229,9 @@ export const projects = [
     title: "Ticketr — Event Ticketing Platform",
     description:
       "Full-stack event ticketing system with Telegram bot for ticket claims, Telebirr payment verification, QR code generation, and a scanner check-in app. Features configurable pricing tiers (VIP, VVIP, Standard, Student).",
-    image: "/projects/ticketr-preview.png",
+    image: "/projects/tocketer-event.png",
     technologies: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Telegram Bot", "Drizzle ORM"],
-    liveUrl: "",
+    liveUrl: "https://www.ticketr-events.com/",
     githubUrl: "",
     featured: true,
   },
