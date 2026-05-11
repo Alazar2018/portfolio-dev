@@ -176,7 +176,7 @@ export default function Hero() {
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_35%]"
                 priority
               />
             </div>
