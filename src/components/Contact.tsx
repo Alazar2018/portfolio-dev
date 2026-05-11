@@ -16,6 +16,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import { personalInfo, services } from "@/lib/data";
 import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
+import { useTheme } from "./ThemeProvider";
 
 const serviceOptions = [
   { value: "", label: "Select a service you're interested in" },
@@ -45,6 +46,7 @@ export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const captchaRef = useRef<HCaptcha>(null);
+  const { theme } = useTheme();
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -293,7 +295,7 @@ export default function Contact() {
                   sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
                   onVerify={(token) => setCaptchaToken(token)}
                   onExpire={() => setCaptchaToken(null)}
-                  theme="dark"
+                  theme={theme}
                 />
               </div>
 

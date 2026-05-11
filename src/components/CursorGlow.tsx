@@ -2,10 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTheme } from "./ThemeProvider";
 
 export default function CursorGlow() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(false);
+  const { theme } = useTheme();
 
   useEffect(() => {
     const isTouchDevice = "ontouchstart" in window;
@@ -32,6 +34,8 @@ export default function CursorGlow() {
 
   if (!visible) return null;
 
+  const glowOpacity = theme === "light" ? 0.08 : 0.06;
+
   return (
     <motion.div
       className="pointer-events-none fixed inset-0 z-30"
@@ -42,8 +46,7 @@ export default function CursorGlow() {
         style={{
           left: mousePos.x - 250,
           top: mousePos.y - 250,
-          background:
-            "radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%)",
+          background: `radial-gradient(circle, rgba(99, 102, 241, ${glowOpacity}) 0%, transparent 70%)`,
         }}
       />
     </motion.div>

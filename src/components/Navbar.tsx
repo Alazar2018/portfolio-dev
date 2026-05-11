@@ -4,12 +4,16 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { navLinks, personalInfo } from "@/lib/data";
+import { useTheme } from "./ThemeProvider";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,21 +75,47 @@ export default function Navbar() {
               <span className="relative z-10">{link.name}</span>
             </a>
           ))}
+
+          <button
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="ml-2 p-2 text-muted hover:text-accent rounded-lg hover:bg-card transition-all duration-300"
+          >
+            {theme === "dark" ? (
+              <LightModeIcon sx={{ fontSize: 20 }} />
+            ) : (
+              <DarkModeIcon sx={{ fontSize: 20 }} />
+            )}
+          </button>
+
           <a
             href="#contact"
-            className="ml-4 px-5 py-2 text-sm font-medium bg-accent hover:bg-accent-light text-white rounded-lg transition-colors"
+            className="ml-2 px-5 py-2 text-sm font-medium bg-accent hover:bg-accent-light text-white rounded-lg transition-colors"
           >
             Hire Me
           </a>
         </div>
 
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 text-foreground"
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <CloseIcon /> : <MenuIcon />}
-        </button>
+        <div className="flex md:hidden items-center gap-2">
+          <button
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            className="p-2 text-foreground"
+          >
+            {theme === "dark" ? (
+              <LightModeIcon sx={{ fontSize: 22 }} />
+            ) : (
+              <DarkModeIcon sx={{ fontSize: 22 }} />
+            )}
+          </button>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="p-2 text-foreground"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <CloseIcon /> : <MenuIcon />}
+          </button>
+        </div>
       </nav>
 
       <AnimatePresence>
