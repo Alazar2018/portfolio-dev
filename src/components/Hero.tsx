@@ -98,9 +98,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="h-10 flex items-center lg:justify-start justify-center mb-6"
+            className="min-h-[2.5rem] flex items-center lg:justify-start justify-center mb-6"
           >
-            <span className="text-xl sm:text-2xl font-light text-muted">
+            <span className="text-lg sm:text-xl md:text-2xl font-light text-muted">
               {typedText}
               <span className="animate-pulse text-accent">|</span>
             </span>
@@ -176,7 +176,7 @@ export default function Hero() {
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
                 fill
-                className="object-cover object-[center_20%]"
+                className="object-cover object-top"
                 priority
               />
             </div>

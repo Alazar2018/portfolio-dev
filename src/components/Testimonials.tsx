@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -11,9 +11,19 @@ import SectionHeading from "./SectionHeading";
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(0);
+  const touchStart = useRef<number | null>(null);
 
-  const next = () => setCurrent((prev) => (prev + 1) % testimonials.length);
-  const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  const next = () => { setDirection(1); setCurrent((prev) => (prev + 1) % testimonials.length); };
+  const prev = () => { setDirection(-1); setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length); };
+
+  const handleTouchStart = (e: React.TouchEvent) => { touchStart.current = e.touches[0].clientX; };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStart.current === null) return;
+    const diff = touchStart.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { diff > 0 ? next() : prev(); }
+    touchStart.current = null;
+  };
 
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 relative">
@@ -27,15 +37,19 @@ export default function Testimonials() {
 
         <AnimatedSection delay={0.1}>
           <div className="relative">
-            <div className="overflow-hidden rounded-2xl bg-card border border-card-border p-8 sm:p-12">
+            <div
+              className="overflow-hidden rounded-2xl bg-card border border-card-border p-8 sm:p-12 select-none touch-pan-y"
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+            >
               <FormatQuoteIcon sx={{ fontSize: 48 }} className="text-accent/20 mb-4" />
 
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode="wait" initial={false}>
                 <motion.div
                   key={current}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -20 }}
+                  initial={{ opacity: 0, x: direction * 60 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: direction * -60 }}
                   transition={{ duration: 0.3 }}
                 >
                   <p className="text-lg sm:text-xl text-foreground/90 leading-relaxed mb-8 italic">
