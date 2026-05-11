@@ -330,21 +330,15 @@ export const projects = [
 export const testimonials = [
   {
     name: "Bosst Performances",
-    role: "Client — USA (Remote)",
+    role: "Upwork Client — USA · 232 hrs · ★ 5.0",
     content:
-      "Alazar identified and fixed critical performance bottlenecks in our platform, reducing page load time by 35%. His expertise in both frontend and backend made the process seamless.",
+      "Alazar did an outstanding job optimizing our Joomla website across multiple fronts — performance, SEO, and accessibility. He approached the project methodically, starting with a comprehensive audit that clearly identified areas for improvement. We saw noticeable improvements in both speed and search engine visibility. Throughout the project, Alazar was communicative, reliable, and proactive. Highly recommended for any Joomla-related development work.",
   },
   {
-    name: "Noah Real Estate",
-    role: "Client — Ethiopia",
+    name: "Hässelby Client",
+    role: "Upwork Client — Sweden · Fixed Price · ★ 5.0",
     content:
-      "The custom property search system Alazar built transformed our online presence. We saw a 25% increase in qualified leads within the first month of launch.",
-  },
-  {
-    name: "Sinopia Furnitures",
-    role: "Client — SEO Optimization",
-    content:
-      "Our organic traffic jumped by 60% in just 3 months after Alazar optimized our website's SEO. Highly skilled and professional to work with.",
+      "I was pleasantly surprised by Alazar — he delivered above my expectations in terms of the technical solution but also the design was just perfect. The communication was effective and he understood the requirement quite well right from the start. I will likely use his services in similar future projects and want to encourage him to keep this level of performance going forward.",
   },
 ];
 
