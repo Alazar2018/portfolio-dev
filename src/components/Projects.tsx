@@ -1,0 +1,109 @@
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import LaunchIcon from "@mui/icons-material/Launch";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { projects } from "@/lib/data";
+import AnimatedSection from "./AnimatedSection";
+import SectionHeading from "./SectionHeading";
+
+export default function Projects() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.filter((p) => p.featured);
+
+  return (
+    <section id="projects" className="py-16 sm:py-24 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
+        <SectionHeading
+          label="My Work"
+          title="Featured Projects"
+          subtitle="A selection of projects that showcase my skills and experience"
+        />
+
+        <div className={`grid gap-6 ${showAll ? "md:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-2"}`}>
+          <AnimatePresence mode="popLayout">
+            {visibleProjects.map((project, i) => (
+              <AnimatedSection key={project.title} delay={i * 0.1}>
+                <motion.div
+                  layout
+                  whileHover={{ y: -4 }}
+                  className="group h-full flex flex-col rounded-2xl bg-card border border-card-border hover:border-accent/30 overflow-hidden transition-all duration-300"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                  </div>
+
+                  <div className="flex-1 p-6 flex flex-col">
+                    <div className="flex items-start justify-between mb-3">
+                      <h3 className="text-lg font-semibold group-hover:text-accent transition-colors">
+                        {project.title}
+                      </h3>
+                      <div className="flex gap-2 shrink-0 ml-3">
+                        {project.githubUrl && (
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-1.5 text-muted hover:text-accent transition-colors"
+                            aria-label="View source code"
+                          >
+                            <GitHubIcon sx={{ fontSize: 18 }} />
+                          </a>
+                        )}
+                        {project.liveUrl && (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-1.5 text-muted hover:text-accent transition-colors"
+                            aria-label="View live site"
+                          >
+                            <LaunchIcon sx={{ fontSize: 18 }} />
+                          </a>
+                        )}
+                      </div>
+                    </div>
+
+                    <p className="text-sm text-muted leading-relaxed mb-4 flex-1">
+                      {project.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-3 py-1 text-xs font-mono text-accent bg-accent/10 rounded-full"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              </AnimatedSection>
+            ))}
+          </AnimatePresence>
+        </div>
+
+        {projects.length > 3 && (
+          <AnimatedSection className="text-center mt-10" delay={0.3}>
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="px-6 py-3 border border-card-border hover:border-accent/50 rounded-xl text-sm font-medium transition-all duration-300 hover:bg-card"
+            >
+              {showAll ? "Show Less" : `View All Projects (${projects.length})`}
+            </button>
+          </AnimatedSection>
+        )}
+      </div>
+    </section>
+  );
+}
