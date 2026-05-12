@@ -14,7 +14,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Alazar Tilahun",
-  url: "https://alazar.dev",
+  url: "https://alazar-dev.vercel.app",
   jobTitle: "Senior Full Stack Engineer",
   worksFor: [
     { "@type": "Organization", name: "Arifpay Financial Technologies" },

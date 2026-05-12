@@ -62,7 +62,7 @@ export default function Contact() {
     try {
       const payload: Record<string, string> = {
         access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "",
-        from_name: `${formData.name} via alazar.dev`,
+        from_name: `${formData.name} via alazar-dev.vercel.app`,
         replyto: formData.email,
         subject: `New Inquiry: ${formData.service || "General"} — ${formData.name}`,
         "Full Name": formData.name,

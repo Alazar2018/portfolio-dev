@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://alazar.dev/sitemap.xml",
+    sitemap: "https://alazar-dev.vercel.app/sitemap.xml",
   };
 }

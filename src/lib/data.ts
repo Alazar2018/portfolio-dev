@@ -105,7 +105,7 @@ export const experiences = [
     technologies: ["Spring Boot", "MySQL", "Eureka", "Spring Cloud Gateway", "React", "Flutter"],
   },
   {
-    company: "Freelance (Upwork & Betolo IT Solutions)",
+    company: "Freelance (Upwork)",
     role: "Senior CMS Developer (Joomla, WordPress, PHP)",
     period: "Mar 2023 - Present",
     type: "Remote",

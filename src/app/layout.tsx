@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://alazar.dev";
+const siteUrl = "https://alazar-dev.vercel.app";
 
 export const viewport: Viewport = {
   width: "device-width",
