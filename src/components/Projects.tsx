@@ -5,12 +5,29 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import LaunchIcon from "@mui/icons-material/Launch";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { projects } from "@/lib/data";
+import { projects, type ProjectDetail } from "@/lib/data";
 import AnimatedSection from "./AnimatedSection";
 import SectionHeading from "./SectionHeading";
+import ProjectShowcase from "./ProjectShowcase";
+
+function StatusBadgeSmall({ status }: { status: ProjectDetail["status"] }) {
+  const config = {
+    deployed: { label: "Live", dotClass: "bg-emerald-400" },
+    upcoming: { label: "Coming Soon", dotClass: "bg-amber-400" },
+    completed: { label: "Completed", dotClass: "bg-blue-400" },
+  };
+  const { label, dotClass } = config[status];
+  return (
+    <span className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-medium text-white bg-background/70 backdrop-blur-sm rounded-full">
+      <span className={`w-1.5 h-1.5 rounded-full ${dotClass}`} />
+      {label}
+    </span>
+  );
+}
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<ProjectDetail | null>(null);
   const visibleProjects = showAll ? projects : projects.filter((p) => p.featured);
 
   return (
@@ -29,9 +46,11 @@ export default function Projects() {
                 <motion.div
                   layout
                   whileHover={{ y: -4 }}
-                  className="group h-full flex flex-col rounded-2xl bg-card border border-card-border hover:border-accent/30 overflow-hidden transition-all duration-300"
+                  onClick={() => setSelectedProject(project)}
+                  className="group h-full flex flex-col rounded-2xl bg-card border border-card-border hover:border-accent/30 overflow-hidden transition-all duration-300 cursor-pointer"
                 >
                   <div className="relative h-48 overflow-hidden">
+                    <StatusBadgeSmall status={project.status} />
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -54,6 +73,7 @@ export default function Projects() {
                             rel="noopener noreferrer"
                             className="p-1.5 text-muted hover:text-accent transition-colors"
                             aria-label="View source code"
+                            onClick={(e) => e.stopPropagation()}
                           >
                             <GitHubIcon sx={{ fontSize: 18 }} />
                           </a>
@@ -65,6 +85,7 @@ export default function Projects() {
                             rel="noopener noreferrer"
                             className="p-1.5 text-muted hover:text-accent transition-colors"
                             aria-label="View live site"
+                            onClick={(e) => e.stopPropagation()}
                           >
                             <LaunchIcon sx={{ fontSize: 18 }} />
                           </a>
@@ -104,6 +125,13 @@ export default function Projects() {
           </AnimatedSection>
         )}
       </div>
+
+      {selectedProject && (
+        <ProjectShowcase
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   );
 }
