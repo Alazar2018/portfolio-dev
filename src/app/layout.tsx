@@ -90,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="gbUk8_i3YqWsLPUgVOWBJZAVdY18WihGYeAEA01wifU" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
