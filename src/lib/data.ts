@@ -34,7 +34,7 @@ export const personalInfo = {
 export const experiences = [
   {
     company: "Arifpay Financial Technologies",
-    role: "Spring Boot Developer → Team Lead → Senior Software Engineer",
+    role: "Senior Software Engineer → Lead Software Engineer",
     period: "Nov 2024 - Present",
     type: "On-site",
     description:
