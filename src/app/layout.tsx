@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Alazar Tilahun | Senior Full Stack Engineer",
   description:
-    "Senior Full Stack Engineer with 4+ years of experience building scalable fintech systems. Specialized in Java/Spring Boot, Next.js/React, and payment integrations. Available for freelance.",
+    "Senior Full Stack Engineer with 5+ years of experience building scalable fintech systems. Specialized in Java/Spring Boot, Next.js/React, and payment integrations. Available for freelance.",
   keywords: [
     "Alazar Tilahun",
     "full-stack developer",

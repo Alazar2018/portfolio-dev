@@ -13,11 +13,11 @@ export const personalInfo = {
   phone: "+251-947360468",
   location: "Addis Ababa, Ethiopia",
   availability: "Available for freelance",
-  bio: `Senior Full Stack Engineer with 4+ years of experience building scalable fintech 
+  bio: `Senior Full Stack Engineer with 5+ years of experience building scalable fintech 
   systems, enterprise web applications, and CMS platforms. Specialized in Java/Spring Boot 
   backends, Next.js/React frontends, and payment integrations (M-PESA, Telebirr, PayPal, 
   Eco Bank). Experienced in Joomla, WordPress, and Laravel-based CMS development with 
-  proven SEO and performance results. Led teams at Arifpay (processing 50,000+ transactions/month), 
+  proven SEO and performance results. Led engineering teams at Arifpay, 
   served as Technical Lead at MPI, and worked as a Senior Software Engineer at BGWG Monster & 
   BGWG Media. Top-rated freelancer on Upwork specializing in Joomla and CMS solutions.`,
   resumeUrl: "/cv/Alazar TIlahun Professional Resume.pdf",
@@ -38,9 +38,10 @@ export const experiences = [
     period: "Nov 2024 - Present",
     type: "On-site",
     description:
-      "Architected recurring billing and split payment systems integrating PayPal, Telebirr, and M-PESA, processing 50,000+ transactions/month. Refactored legacy code improving throughput by 50% and reducing latency by 30%. Promoted to lead two teams (5 developers each) within 4 months.",
+      "Architected recurring billing and split payment systems integrating PayPal, Telebirr, M-PESA, and Eco Bank. Used Groovy for complex scripting to develop custom payment modules professionally. Refactored legacy code improving throughput by 50% and reducing latency by 30%. Promoted to lead two teams (5 developers each) within 4 months.",
     highlights: [
-      "50,000+ transactions/month processed",
+      "Eco Bank payment integration alongside major wallets",
+      "Groovy scripting for custom fintech modules",
       "50% throughput improvement via refactoring",
       "Led 2 teams of 5 developers each",
       "Built USSD banking module for loan management",
@@ -68,10 +69,10 @@ export const experiences = [
     period: "2024 - Present",
     type: "Remote",
     description:
-      "Senior Software Engineer at BGWG Monster and BGWG Media, building enterprise-grade solutions across the full stack. Developed fintech features including Eco Bank payment integrations, contributed to architectural decisions, and optimized application performance across both companies.",
+      "Senior Software Engineer at BGWG Monster and BGWG Media, building enterprise-grade solutions across the full stack. Contributed to architectural decisions, CMS and content platforms, and optimized application performance across both companies.",
     highlights: [
-      "Eco Bank payment integration & fintech development",
       "Full-stack enterprise application development",
+      "CMS and content-driven product delivery",
       "Performance optimization and architectural decisions",
     ],
     technologies: ["PHP", "MySQL", "Docker", "Joomla", "WordPress"],
@@ -235,9 +236,9 @@ export const projects: ProjectDetail[] = [
   {
     title: "Arifpay Payment Platform",
     description:
-      "Recurring billing and split payment system integrating PayPal, Telebirr, and M-PESA. Processing 50,000+ transactions/month with 50% improved throughput.",
+      "Recurring billing and split payment system integrating PayPal, Telebirr, M-PESA, and Eco Bank. Legacy refactoring delivered 50% throughput gains and 30% lower latency.",
     longDescription:
-      "Enterprise-grade fintech platform powering recurring billing and split payment workflows across multiple payment providers. Architected to handle high-throughput transaction processing with event-driven microservices, the system integrates PayPal, Telebirr, and M-PESA into a unified API. Includes a USSD banking module for loan management and a parking management subsystem.",
+      "Enterprise-grade fintech platform powering recurring billing and split payment workflows across multiple payment providers. Event-driven microservices integrate PayPal, Telebirr, M-PESA, and Eco Bank into a unified API, with Groovy used for complex scripting and custom payment modules. Includes a USSD banking module for loan management and a parking management subsystem.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
     images: ["https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"],
     technologies: ["Spring Boot", "Java", "Groovy", "Kafka", "PostgreSQL", "Docker", "Microservices"],
@@ -249,8 +250,8 @@ export const projects: ProjectDetail[] = [
     features: [
       "Recurring billing with configurable payment schedules",
       "Split payment system across multiple providers",
-      "PayPal, Telebirr, and M-PESA integration",
-      "50,000+ transactions processed per month",
+      "PayPal, Telebirr, M-PESA, and Eco Bank integration",
+      "Groovy scripting for custom payment modules",
       "50% throughput improvement via legacy code refactoring",
       "30% latency reduction through optimization",
       "USSD banking module for loan management",
@@ -677,7 +678,7 @@ export const achievements = [
   { value: "50%", label: "Performance Gain at ArifPay" },
   { value: "7+", label: "Developers Mentored" },
   { value: "10+", label: "Full-Stack Projects Delivered" },
-  { value: "50K+", label: "Transactions/Month Processed" },
+  { value: "30%", label: "Latency Reduction (Core Services)" },
 ];
 
 export const education = {

@@ -113,7 +113,7 @@ export default function Hero() {
             className="text-base text-muted max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed"
           >
             I build exceptional fintech systems and web applications — from payment
-            platforms processing 50K+ transactions to scalable enterprise solutions.
+            rails and microservices to scalable enterprise solutions.
           </motion.p>
 
           <motion.div
@@ -181,7 +181,7 @@ export default function Hero() {
               />
             </div>
             <div className="absolute -bottom-2 -right-2 px-4 py-2 bg-card border border-card-border rounded-xl text-xs font-medium shadow-lg">
-              <span className="text-accent">4+</span> Years Experience
+              <span className="text-accent">5+</span> Years Experience
             </div>
           </div>
         </motion.div>
