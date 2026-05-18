@@ -20,14 +20,31 @@ interface Props {
 
 function StatusBadge({ status }: { status: ProjectDetail["status"] }) {
   const config = {
-    deployed: { label: "Live", dotClass: "bg-emerald-400", textClass: "text-emerald-400" },
-    upcoming: { label: "Coming Soon", dotClass: "bg-amber-400", textClass: "text-amber-400" },
-    completed: { label: "Completed", dotClass: "bg-blue-400", textClass: "text-blue-400" },
+    deployed: {
+      label: "Live",
+      dotClass: "bg-emerald-500",
+      pillClass:
+        "text-emerald-800 bg-emerald-100 border-emerald-200 dark:text-emerald-100 dark:bg-emerald-950/60 dark:border-emerald-500/40",
+    },
+    upcoming: {
+      label: "Coming Soon",
+      dotClass: "bg-amber-500",
+      pillClass:
+        "text-amber-900 bg-amber-100 border-amber-200 dark:text-amber-100 dark:bg-amber-950/60 dark:border-amber-500/40",
+    },
+    completed: {
+      label: "Completed",
+      dotClass: "bg-blue-500",
+      pillClass:
+        "text-blue-800 bg-blue-100 border-blue-200 dark:text-blue-100 dark:bg-blue-950/60 dark:border-blue-500/40",
+    },
   };
-  const { label, dotClass, textClass } = config[status];
+  const { label, dotClass, pillClass } = config[status];
   return (
-    <span className={`inline-flex items-center gap-1.5 text-xs font-medium ${textClass}`}>
-      <span className={`w-2 h-2 rounded-full ${dotClass} animate-pulse`} />
+    <span
+      className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold border rounded-full ${pillClass}`}
+    >
+      <span className={`w-2 h-2 rounded-full shrink-0 ${dotClass} animate-pulse`} />
       {label}
     </span>
   );

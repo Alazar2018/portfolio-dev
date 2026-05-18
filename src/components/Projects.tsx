@@ -12,14 +12,31 @@ import ProjectShowcase from "./ProjectShowcase";
 
 function StatusBadgeSmall({ status }: { status: ProjectDetail["status"] }) {
   const config = {
-    deployed: { label: "Live", dotClass: "bg-emerald-400" },
-    upcoming: { label: "Coming Soon", dotClass: "bg-amber-400" },
-    completed: { label: "Completed", dotClass: "bg-blue-400" },
+    deployed: {
+      label: "Live",
+      dotClass: "bg-emerald-500",
+      pillClass:
+        "text-emerald-950 bg-emerald-100/95 border-emerald-200/80 dark:text-emerald-50 dark:bg-emerald-950/90 dark:border-emerald-500/30",
+    },
+    upcoming: {
+      label: "Coming Soon",
+      dotClass: "bg-amber-500",
+      pillClass:
+        "text-amber-950 bg-amber-100/95 border-amber-200/80 dark:text-amber-50 dark:bg-amber-950/90 dark:border-amber-500/30",
+    },
+    completed: {
+      label: "Completed",
+      dotClass: "bg-blue-500",
+      pillClass:
+        "text-blue-950 bg-blue-100/95 border-blue-200/80 dark:text-blue-50 dark:bg-blue-950/90 dark:border-blue-500/30",
+    },
   };
-  const { label, dotClass } = config[status];
+  const { label, dotClass, pillClass } = config[status];
   return (
-    <span className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-medium text-white bg-background/70 backdrop-blur-sm rounded-full">
-      <span className={`w-1.5 h-1.5 rounded-full ${dotClass}`} />
+    <span
+      className={`absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-semibold border backdrop-blur-md rounded-full shadow-sm ${pillClass}`}
+    >
+      <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${dotClass}`} />
       {label}
     </span>
   );
