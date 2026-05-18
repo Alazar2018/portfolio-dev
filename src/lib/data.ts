@@ -302,8 +302,8 @@ export const projects: ProjectDetail[] = [
       "Multi-tenant inventory and retail SaaS: org subdomains, self-service signup with staff approval, Stripe subscriptions, barcode POS, wholesale B2B, and a platform console for operators.",
     longDescription:
       "Inventra is a production-grade multi-tenant SaaS for retail and wholesale operations. Organizations onboard via self-service signup, are provisioned after SaaS staff approval (trial + demo catalog), and access tenant apps on per-org subdomains with strict isolation. The NestJS API powers inventory, sales, procurement, invoicing, and branch RBAC; the Next.js web app delivers marketing, tenant admin/scanner/data-entry portals, and a dedicated platform console for billing, approvals, support, and KPIs. Stripe Checkout, Customer Portal, and idempotent webhooks handle monthly/yearly plans. Telegram and optional EOD email keep ops in sync. Monorepo with Docker-based local infra, Prisma migrations, and GitHub Actions CI plus SSH deploy to VPS.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
-    images: ["https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"],
+    image: "/projects/inventra-cloud.png",
+    images: ["/projects/inventra-cloud.png"],
     technologies: [
       "NestJS",
       "Next.js",
