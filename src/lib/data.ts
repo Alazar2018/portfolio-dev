@@ -15,11 +15,12 @@ export const personalInfo = {
   availability: "Available for freelance",
   bio: `Senior Full Stack Engineer with 5+ years of experience building scalable fintech 
   systems, enterprise web applications, and CMS platforms. Specialized in Java/Spring Boot 
-  backends, Next.js/React frontends, and payment integrations (M-PESA, Telebirr, PayPal, 
-  Eco Bank). Experienced in Joomla, WordPress, and Laravel-based CMS development with 
-  proven SEO and performance results. Led engineering teams at Arifpay, 
-  served as Technical Lead at MPI, and worked as a Senior Software Engineer at BGWG Monster & 
-  BGWG Media. Top-rated freelancer on Upwork specializing in Joomla and CMS solutions.`,
+  and .NET backends, Next.js/React frontends, and payment integrations (M-PESA, Telebirr, 
+  PayPal, Eco Bank). At Arifpay I build and optimize .NET payment gateway services for user 
+  and sub-user management. Experienced in Joomla, WordPress, and Laravel-based CMS development 
+  with proven SEO and performance results. Led engineering teams at Arifpay, served as 
+  Technical Lead at MPI, and shipped SaaS products including Inventra Cloud. Top-rated 
+  freelancer on Upwork specializing in Joomla and CMS solutions.`,
   resumeUrl: "/cv/Alazar TIlahun Professional Resume.pdf",
   profileImage: "/hero/6046238351683160933_121.jpg",
   speakingImage: "/hero/5850639360565382018_121.jpg",
@@ -38,8 +39,10 @@ export const experiences = [
     period: "Nov 2024 - Present",
     type: "On-site",
     description:
-      "Architected recurring billing and split payment systems integrating PayPal, Telebirr, M-PESA, and Eco Bank. Used Groovy for complex scripting to develop custom payment modules professionally. Refactored legacy code improving throughput by 50% and reducing latency by 30%. Promoted to lead two teams (5 developers each) within 4 months.",
+      "Hands-on Lead Software Engineer architecting recurring billing and split payment systems integrating PayPal, Telebirr, M-PESA, and Eco Bank. Built and optimized .NET payment gateway services for user and sub-user management — roles, permissions, and merchant account hierarchies. Used Groovy for custom payment modules and refactored legacy code improving throughput by 50% and reducing latency by 30%. Promoted to lead two teams (5 developers each) within 4 months.",
     highlights: [
+      ".NET payment gateway — user and sub-user management with role-based access",
+      ".NET optimization — refactored auth and account flows for lower latency",
       "Eco Bank payment integration alongside major wallets",
       "Groovy scripting for custom fintech modules",
       "50% throughput improvement via refactoring",
@@ -47,7 +50,7 @@ export const experiences = [
       "Built USSD banking module for loan management",
       "Built parking management system (Next.js + Spring Boot)",
     ],
-    technologies: ["Spring Boot", "Java", "Groovy", "NestJS", "Next.js", "Kafka", "PostgreSQL", "Docker", "Microservices"],
+    technologies: ["Spring Boot", "Java", ".NET", "Groovy", "NestJS", "Next.js", "Kafka", "PostgreSQL", "Docker", "Microservices"],
   },
   {
     company: "Mindsight Performance Institute (MPI)",
@@ -164,6 +167,7 @@ export const skills = {
   backend: [
     { name: "Java", level: 95 },
     { name: "Spring Boot", level: 95 },
+    { name: ".NET", level: 80 },
     { name: "NestJS", level: 85 },
     { name: "PHP", level: 85 },
     { name: "Laravel", level: 85 },
@@ -198,7 +202,7 @@ export const services = [
   {
     title: "Fintech & Payment Integration",
     description:
-      "Payment gateway integrations (M-PESA, Telebirr, PayPal, Stripe), recurring billing systems, and financial transaction platforms.",
+      "Payment gateway integrations (M-PESA, Telebirr, PayPal, Stripe), .NET user and sub-user management, recurring billing systems, and financial transaction platforms.",
     icon: "payment",
   },
   {
@@ -236,12 +240,12 @@ export const projects: ProjectDetail[] = [
   {
     title: "Arifpay Payment Platform",
     description:
-      "Recurring billing and split payment system integrating PayPal, Telebirr, M-PESA, and Eco Bank. Legacy refactoring delivered 50% throughput gains and 30% lower latency.",
+      "Recurring billing and split payment system integrating PayPal, Telebirr, M-PESA, and Eco Bank. .NET gateway services handle user and sub-user management; legacy refactoring delivered 50% throughput gains and 30% lower latency.",
     longDescription:
-      "Enterprise-grade fintech platform powering recurring billing and split payment workflows across multiple payment providers. Event-driven microservices integrate PayPal, Telebirr, M-PESA, and Eco Bank into a unified API, with Groovy used for complex scripting and custom payment modules. Includes a USSD banking module for loan management and a parking management subsystem.",
+      "Enterprise-grade fintech platform powering recurring billing and split payment workflows across multiple payment providers. Event-driven microservices integrate PayPal, Telebirr, M-PESA, and Eco Bank into a unified API, with Groovy used for complex scripting and custom payment modules. Hands-on .NET services power payment gateway user and sub-user management — merchant hierarchies, role-based permissions, and optimized account flows. Includes a USSD banking module for loan management and a parking management subsystem.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
     images: ["https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"],
-    technologies: ["Spring Boot", "Java", "Groovy", "Kafka", "PostgreSQL", "Docker", "Microservices"],
+    technologies: ["Spring Boot", "Java", ".NET", "Groovy", "Kafka", "PostgreSQL", "Docker", "Microservices"],
     liveUrl: "https://arifpay.net",
     githubUrl: "",
     featured: true,
@@ -251,6 +255,8 @@ export const projects: ProjectDetail[] = [
       "Recurring billing with configurable payment schedules",
       "Split payment system across multiple providers",
       "PayPal, Telebirr, M-PESA, and Eco Bank integration",
+      ".NET payment gateway — user and sub-user management with merchant hierarchies",
+      ".NET optimization — faster auth and account lookup on high-traffic flows",
       "Groovy scripting for custom payment modules",
       "50% throughput improvement via legacy code refactoring",
       "30% latency reduction through optimization",
@@ -318,10 +324,10 @@ export const projects: ProjectDetail[] = [
       "Telegram Bot",
       "GitHub Actions",
     ],
-    liveUrl: "",
+    liveUrl: "https://inventra-cloud.com",
     githubUrl: "",
     featured: true,
-    status: "upcoming",
+    status: "deployed",
     type: "app",
     features: [
       "Multi-tenant SaaS: subdomains, custom domains (DNS verify), signup approval, trial + demo catalog",

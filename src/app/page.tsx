@@ -21,7 +21,7 @@ const jsonLd = {
     { "@type": "Organization", name: "Mindsight Performance Institute" },
   ],
   knowsAbout: [
-    "Java", "Spring Boot", "React", "Next.js", "TypeScript",
+    "Java", "Spring Boot", ".NET", "React", "Next.js", "TypeScript",
     "Node.js", "PostgreSQL", "Docker", "Fintech", "Payment Integration",
   ],
   sameAs: [
