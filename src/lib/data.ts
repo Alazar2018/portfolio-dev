@@ -18,9 +18,10 @@ export const personalInfo = {
   and .NET backends, Next.js/React frontends, and payment integrations (M-PESA, Telebirr, 
   PayPal, Eco Bank). At Arifpay I build and optimize .NET payment gateway services for user 
   and sub-user management. Experienced in Joomla, WordPress, and Laravel-based CMS development 
-  with proven SEO and performance results. Led engineering teams at Arifpay, served as 
-  Technical Lead at MPI, and shipped SaaS products including Inventra Cloud. Top-rated 
-  freelancer on Upwork specializing in Joomla and CMS solutions.`,
+  with proven SEO and performance results. Led engineering teams at Arifpay and served as 
+  Technical Lead at MPI. Independently built Inventra Cloud — a multi-tenant inventory 
+  management SaaS for retail and wholesale. Top-rated freelancer on Upwork specializing 
+  in Joomla and CMS solutions.`,
   resumeUrl: "/cv/Alazar TIlahun Professional Resume.pdf",
   profileImage: "/hero/6046238351683160933_121.jpg",
   speakingImage: "/hero/5850639360565382018_121.jpg",
@@ -305,9 +306,9 @@ export const projects: ProjectDetail[] = [
   {
     title: "Inventra Cloud — Inventory & Retail SaaS",
     description:
-      "Multi-tenant B2B SaaS for multi-branch retail and wholesale: offline-capable scanner PWA, Stripe subscriptions (ETB plans), procurement, B2B AR, platform KPIs with cohort BI, and CHERKA in-product AI guide.",
+      "Multi-tenant inventory management SaaS for multi-branch retail and wholesale: offline-capable scanner PWA, Stripe subscriptions (ETB plans), procurement, B2B AR, platform KPIs with cohort BI, and CHERKA in-product AI guide.",
     longDescription:
-      "Inventra Cloud is a feature-complete multi-tenant inventory and operations platform (demo/UAT ready; production rollout in progress). Each organization gets isolated workspaces on org subdomains or verified custom domains, with self-service signup, SaaS staff approval, trial provisioning, and a demo catalog. Tenant surfaces include marketing (with optional Arabic locale), admin (finance/procurement/ops org roles), installable scanner POS with retail offline mode (IndexedDB catalog cache, queued sales, idempotent sync on reconnect), and data-entry intake. Wholesale B2B, POs with GRN, cycle counts, forecasting, governance queues, and Telegram/EOD reporting cover day-to-day ops. The platform console manages approvals, Stripe billing, support desk (SLA, auto-assign), and investor-grade analytics including nightly materialized cohort retention. CHERKA is an in-app AI guide with tours and contextual help. Built as a NestJS + Next.js monorepo with Prisma/PostgreSQL, Redis, S3, GitHub Actions CI/CD, and VPS deploy.",
+      "Inventra Cloud is a feature-complete multi-tenant inventory and operations platform, live at inventra-cloud.com. Each organization gets isolated workspaces on org subdomains or verified custom domains, with self-service signup, SaaS staff approval, trial provisioning, and a demo catalog. Tenant surfaces include marketing (with optional Arabic locale), admin (finance/procurement/ops org roles), installable scanner POS with retail offline mode (IndexedDB catalog cache, queued sales, idempotent sync on reconnect), and data-entry intake. Wholesale B2B, POs with GRN, cycle counts, forecasting, governance queues, and Telegram/EOD reporting cover day-to-day ops. The platform console manages approvals, Stripe billing, support desk (SLA, auto-assign), and investor-grade analytics including nightly materialized cohort retention. CHERKA is an in-app AI guide with tours and contextual help. Built as a NestJS + Next.js monorepo with Prisma/PostgreSQL, Redis, S3, GitHub Actions CI/CD, and VPS deploy.",
     image: "/projects/inventra-cloud.png",
     images: ["/projects/inventra-cloud.png"],
     technologies: [

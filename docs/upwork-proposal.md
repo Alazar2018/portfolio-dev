@@ -23,14 +23,16 @@ Hi [Client Name] — I read your post about [specific goal from their job, e.g. 
 **Relevant experience**  
 I am a Senior Full Stack Engineer (5+ years) and top-rated Upwork freelancer. I build production systems daily:
 
-- **Fintech & payments** — At Arifpay I integrated PayPal, Telebirr, M-PESA, and Eco Bank; built recurring billing and split payments; improved throughput 50% via refactoring.
-- **Modern web apps** — Next.js, React, TypeScript, Tailwind; backends with Spring Boot, NestJS, PostgreSQL.
+- **Fintech & payments** — At Arifpay I integrated PayPal, Telebirr, M-PESA, and Eco Bank; built and optimized .NET payment gateway services for user and sub-user management; built recurring billing and split payments; improved throughput 50% via refactoring.
+- **Inventory & SaaS** — Inventra Cloud (https://inventra-cloud.com), a multi-tenant inventory management platform with offline POS scanner, procurement, B2B wholesale, and Stripe billing.
+- **Modern web apps** — Next.js, React, TypeScript, Tailwind; backends with Spring Boot, .NET, NestJS, PostgreSQL.
 - **CMS & business sites** — Joomla/WordPress/Laravel; SEO and performance work (e.g. 60% organic traffic increase for Sinopia Furnitures, 35% faster loads for a US client).
 
 Live examples: [pick 1–2 that match the job]  
-• https://arifpay.net  
-• https://www.ticketr-events.com/  
-• https://noahrealestateplc.com  
+• Fintech: https://arifpay.net  
+• Inventory SaaS: https://inventra-cloud.com  
+• Events: https://www.ticketr-events.com/  
+• CMS: https://noahrealestateplc.com  
 
 Full portfolio: https://alazar-dev.vercel.app  
 
@@ -110,16 +112,48 @@ Alazar
 
 ---
 
+## Inventory / SaaS / ERP proposal
+
+---
+
+Hi [Client Name],
+
+I saw you need [inventory system / multi-tenant SaaS / POS / procurement platform] — I built **Inventra Cloud** (https://inventra-cloud.com), a production inventory management SaaS for multi-branch retail and wholesale.
+
+**What it covers (and what I can adapt for you)**  
+• Multi-tenant workspaces with subdomains and custom domains  
+• Offline-capable scanner POS (PWA, queued sales, idempotent sync)  
+• Stock, PO/GRN, cycle counts, B2B quotes/invoices, and forecasting  
+• Stripe subscriptions, admin roles (Finance, Procurement, Operations), and platform analytics  
+
+**Stack** — NestJS, Next.js, TypeScript, Prisma, PostgreSQL, Redis, Stripe, Docker  
+
+This is separate from my fintech work at Arifpay — Inventra Cloud is purpose-built for inventory and retail operations.
+
+**Suggested approach**  
+1. Map your branches, stock flows, and user roles  
+2. Build core inventory + admin (or POS) in milestone 1  
+3. Add reporting, billing, or integrations in milestone 2  
+
+Live product: https://inventra-cloud.com  
+Full portfolio: https://alazar-dev.vercel.app  
+
+What is your current setup (spreadsheet, legacy ERP, or greenfield) and how many branches/users?
+
+Alazar
+
+---
+
 ## Fintech / API / payment integration proposal
 
 ---
 
 Hi [Client Name],
 
-I saw you need [payment gateway / billing / API integration] — this is core work for me. I am Lead Software Engineer at **Arifpay** (Ethiopian fintech), where I build recurring billing, split payments, and integrations with **PayPal, Telebirr, M-PESA, and Eco Bank**.
+I saw you need [payment gateway / billing / API integration] — this is core work for me. I am Lead Software Engineer at **Arifpay** (Ethiopian fintech), where I build recurring billing, split payments, .NET payment gateway user and sub-user management, and integrations with **PayPal, Telebirr, M-PESA, and Eco Bank**.
 
 **What I bring**  
-• Spring Boot / NestJS APIs, PostgreSQL, Docker, Kafka where scale matters  
+• Spring Boot / .NET / NestJS APIs, PostgreSQL, Docker, Kafka where scale matters  
 • Security-minded flows (webhooks, idempotency, reconciliation, error handling)  
 • Next.js dashboards for ops and customer-facing apps  
 
