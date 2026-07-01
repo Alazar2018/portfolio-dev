@@ -23,7 +23,7 @@ export const personalInfo = {
   management SaaS for retail and wholesale. Top-rated freelancer on Upwork specializing 
   in Joomla and CMS solutions.`,
   resumeUrl: "/cv/Alazar TIlahun Professional Resume.pdf",
-  profileImage: "/hero/6046238351683160933_121.jpg",
+  profileImage: "/hero/5913780460762894724_120.jpg",
   speakingImage: "/hero/5850639360565382018_121.jpg",
   social: {
     github: "https://github.com/Alazar2018",
@@ -356,6 +356,53 @@ export const projects: ProjectDetail[] = [
     ],
     architecture:
       "Monorepo: inventory-api (NestJS REST, Prisma/PostgreSQL, Stripe/Telegram/S3), inventory-web (Next.js 16 — marketing, /admin, /scanner PWA with offline IndexedDB layer, /entry, /platform), inventory-local (Docker Compose: Postgres, Redis, MinIO). Tenancy from Host (subdomain or verified custom domain). Scheduled jobs: EOD, Telegram digests, Stripe webhook retries, cohort snapshots (02:00 UTC). Scanner offline: GET /sales/offline-catalog, queued sync via service worker. Optional inventra-terminal wrapper for Tap to Pay. CI: build/test on PR; SSH deploy to VPS on main.",
+  },
+  {
+    title: "Mekenet — Personal Finance & Financial Freedom",
+    description:
+      "Ethiopia-first budgeting and financial-freedom platform with on-device SMS auto-import (Telebirr, CBE, Dashen), zero-based budgets, debt payoff engine, and FI planning — Android, web, and Ktor API.",
+    longDescription:
+      "Mekenet (መቀነት) is an Ethiopia-first personal finance and financial-freedom platform built global-ready from day one. The hero differentiator is on-device SMS auto-import from 16+ Ethiopian bank and wallet parsers (Telebirr, CBE, Dashen, Awash, and more) — raw SMS never leaves the phone. A shared plan-engine powers zero-based budgeting, safe-to-spend (ቀሪ ገንዘብ), payday playbooks, debt snowball/avalanche strategies, typed goals (equb, FI targets, debt payoff), and Ramsey Baby Steps. The Android app (Kotlin/Compose, Room, offline-first) pairs with a Next.js web client and Ktor + PostgreSQL backend for cloud sync, household/couples planning, learn content, and a credit passport model (Mekenet never lends — users share eligibility data with partner banks/MFIs). Amharic-first UI with ETB-native amounts; monetization via Free → Plus → Pro tiers with Google Play Billing.",
+    image: "/projects/mekenet-icon.svg",
+    images: ["/projects/mekenet-icon.svg"],
+    technologies: [
+      "Kotlin",
+      "Jetpack Compose",
+      "Android",
+      "Next.js",
+      "TypeScript",
+      "Ktor",
+      "PostgreSQL",
+      "Room",
+      "Tailwind CSS",
+      "Gradle",
+    ],
+    liveUrl: "https://mekenet.app",
+    githubUrl: "",
+    featured: true,
+    status: "upcoming",
+    type: "app",
+    features: [
+      "On-device SMS auto-import — 16+ Ethiopian bank/wallet parsers; raw SMS never leaves the phone",
+      "Zero-based budgeting, envelope rollover, safe-to-spend, and budget vs actual",
+      "Shared plan-engine: BRIDGE / TIGHT / NORMAL / WEALTH modes with payday playbook",
+      "Debt tracker with snowball/avalanche strategies and payoff simulator",
+      "Typed goals: debt payoff, savings, equb, FI targets, percentage splits, milestones",
+      "Ramsey Baby Steps 1–7 auto-detect with windfall and paycheck templates",
+      "Accounts for CBE, Telebirr, Dashen, Awash, Coop, Equb — ETB-native, Amharic-first UI",
+      "Android offline-first (Room) + Next.js web + Ktor API cloud sync",
+      "Household/couples shared planning; learn & creator content modules",
+      "Credit passport — eligibility sharing with partner banks (no lending on-platform)",
+      "Free → Plus → Pro tiers with Google Play Billing",
+    ],
+    security: [
+      "Raw SMS parsed on-device only — structured transactions sync; no SMS upload for credit",
+      "GDPR-ready consent, export, and account deletion flows",
+      "Explicit opt-in for credit data sharing with partner institutions",
+      "App PIN lock; privacy-first categorization with user-controlled rules",
+    ],
+    architecture:
+      "Multi-client: Android (Kotlin/Compose, Room, :plan-engine, :parser-core with remote-updatable parser_config.json) · Web (Next.js 15, Tailwind) · Backend (Ktor REST /v1, PostgreSQL). Shared pure plan-engine runs on device, JVM backend, and tests with no Android deps. Offline-first mobile with optional Wave 2 sync. OpenAPI contract; money stored as integer minor units + ISO 4217 currency.",
   },
   {
     title: "Auditor — Ethiopian Tax & Audit SaaS",
