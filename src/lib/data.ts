@@ -363,8 +363,8 @@ export const projects: ProjectDetail[] = [
       "Ethiopia-first budgeting and financial-freedom platform with on-device SMS auto-import (Telebirr, CBE, Dashen), zero-based budgets, debt payoff engine, and FI planning — Android, web, and Ktor API.",
     longDescription:
       "Mekenet (መቀነት) is an Ethiopia-first personal finance and financial-freedom platform built global-ready from day one. The hero differentiator is on-device SMS auto-import from 16+ Ethiopian bank and wallet parsers (Telebirr, CBE, Dashen, Awash, and more) — raw SMS never leaves the phone. A shared plan-engine powers zero-based budgeting, safe-to-spend (ቀሪ ገንዘብ), payday playbooks, debt snowball/avalanche strategies, typed goals (equb, FI targets, debt payoff), and Ramsey Baby Steps. The Android app (Kotlin/Compose, Room, offline-first) pairs with a Next.js web client and Ktor + PostgreSQL backend for cloud sync, household/couples planning, learn content, and a credit passport model (Mekenet never lends — users share eligibility data with partner banks/MFIs). Amharic-first UI with ETB-native amounts; monetization via Free → Plus → Pro tiers with Google Play Billing.",
-    image: "/projects/mekenet-icon.svg",
-    images: ["/projects/mekenet-icon.svg"],
+    image: "/projects/logo-mekenet.png",
+    images: ["/projects/logo-mekenet.png"],
     technologies: [
       "Kotlin",
       "Jetpack Compose",
