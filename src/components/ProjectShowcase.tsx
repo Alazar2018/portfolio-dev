@@ -50,7 +50,17 @@ function StatusBadge({ status }: { status: ProjectDetail["status"] }) {
   );
 }
 
-function ImageSlideshow({ images, title }: { images: string[]; title: string }) {
+function ImageSlideshow({
+  images,
+  title,
+  imageFit = "cover",
+  imageBg,
+}: {
+  images: string[];
+  title: string;
+  imageFit?: ProjectDetail["imageFit"];
+  imageBg?: string;
+}) {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -75,7 +85,10 @@ function ImageSlideshow({ images, title }: { images: string[]; title: string }) 
   };
 
   return (
-    <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-background/50 group/slide">
+    <div
+      className="relative w-full aspect-video rounded-xl overflow-hidden bg-background/50 group/slide"
+      style={imageBg ? { backgroundColor: imageBg } : undefined}
+    >
       <AnimatePresence initial={false} custom={direction} mode="popLayout">
         <motion.div
           key={current}
@@ -91,7 +104,7 @@ function ImageSlideshow({ images, title }: { images: string[]; title: string }) 
             src={images[current]}
             alt={`${title} screenshot ${current + 1}`}
             fill
-            className="object-cover"
+            className={imageFit === "contain" ? "object-contain p-12" : "object-cover"}
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </motion.div>
@@ -139,7 +152,12 @@ function AppShowcase({ project, onClose }: Props) {
   return (
     <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
       <div className="lg:w-1/2 shrink-0">
-        <ImageSlideshow images={project.images} title={project.title} />
+        <ImageSlideshow
+          images={project.images}
+          title={project.title}
+          imageFit={project.imageFit}
+          imageBg={project.imageBg}
+        />
 
         <div className="flex flex-wrap gap-2 mt-4">
           {project.technologies.map((tech) => (
@@ -233,7 +251,12 @@ function AppShowcase({ project, onClose }: Props) {
 function WebsiteShowcase({ project }: Omit<Props, "onClose">) {
   return (
     <div className="space-y-6">
-      <ImageSlideshow images={project.images} title={project.title} />
+      <ImageSlideshow
+        images={project.images}
+        title={project.title}
+        imageFit={project.imageFit}
+        imageBg={project.imageBg}
+      />
 
       <div className="flex items-center gap-3 mb-1">
         <h2 className="text-xl sm:text-2xl font-bold">{project.title}</h2>

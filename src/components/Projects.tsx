@@ -66,15 +66,24 @@ export default function Projects() {
                   onClick={() => setSelectedProject(project)}
                   className="group h-full flex flex-col rounded-2xl bg-card border border-card-border hover:border-accent/30 overflow-hidden transition-all duration-300 cursor-pointer"
                 >
-                  <div className="relative h-48 overflow-hidden">
+                  <div
+                    className="relative h-48 overflow-hidden"
+                    style={project.imageBg ? { backgroundColor: project.imageBg } : undefined}
+                  >
                     <StatusBadgeSmall status={project.status} />
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className={
+                        project.imageFit === "contain"
+                          ? "object-contain p-10"
+                          : "object-cover group-hover:scale-105 transition-transform duration-500"
+                      }
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                    {project.imageFit !== "contain" && (
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                    )}
                   </div>
 
                   <div className="flex-1 p-6 flex flex-col">
