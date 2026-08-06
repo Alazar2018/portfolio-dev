@@ -1,27 +1,27 @@
 export const personalInfo = {
   name: "Alazar Tilahun",
-  title: "Senior Full Stack Engineer",
+  title: "Senior Full Stack Engineer | Tech Lead",
   taglines: [
-    "Senior Software Engineer",
-    "Technical Lead",
-    "Fintech Developer",
-    "Senior CMS Developer",
-    "Frontend & Backend Engineer",
-    "Freelance Engineer",
+    "Senior Technical Lead",
+    "Distributed Systems Engineer",
+    "Fintech Platform Builder",
+    "Full Stack Engineer",
+    "Event-Driven Architect",
+    "Cloud-Native Engineer",
   ],
   email: "alazartilahun13@gmail.com",
   phone: "+251-947360468",
   location: "Addis Ababa, Ethiopia",
-  availability: "Available for freelance",
-  bio: `Senior Full Stack Engineer with 5+ years of experience building scalable fintech 
-  systems, enterprise web applications, and CMS platforms. Specialized in Java/Spring Boot 
-  and .NET backends, Next.js/React frontends, and payment integrations (M-PESA, Telebirr, 
-  PayPal, Eco Bank). At Arifpay I build and optimize .NET payment gateway services for user 
-  and sub-user management. Experienced in Joomla, WordPress, and Laravel-based CMS development 
-  with proven SEO and performance results. Led engineering teams at Arifpay and served as 
-  Technical Lead at MPI. Independently built Inventra Cloud — a multi-tenant inventory 
-  management SaaS for retail and wholesale. Top-rated freelancer on Upwork specializing 
-  in Joomla and CMS solutions.`,
+  availability: "Open to Tech Lead roles",
+  bio: `Senior Technical Lead and Full Stack Engineer with 6+ years designing scalable 
+  fintech platforms, distributed systems, and cloud-native applications. Specialized in 
+  Java/Spring Boot, .NET, Next.js/React, and event-driven microservices with Kafka. 
+  At Arifpay I architect high-volume payment workflows — recurring billing, split payments, 
+  merchant settlement — and lead two engineering teams. At MPI I drive Azure cloud-native 
+  architecture, Entra ID auth, and production observability. Strong in database optimization, 
+  DevOps collaboration (Docker, Kubernetes, Terraform), Grafana/Prometheus monitoring, and 
+  AI-assisted development with rigorous code review. Hands-on practitioner who writes code, 
+  diagnoses production issues, and mentors teams to ship durable systems.`,
   resumeUrl: "/cv/Alazar TIlahun Professional Resume.pdf",
   profileImage: "/hero/5913780460762894724_120.jpg",
   speakingImage: "/hero/5850639360565382018_121.jpg",
@@ -36,36 +36,42 @@ export const personalInfo = {
 export const experiences = [
   {
     company: "Arifpay Financial Technologies",
-    role: "Senior Software Engineer → Lead Software Engineer",
+    role: "Spring Boot Developer → Senior Software Engineer → Tech Lead",
     period: "Nov 2024 - Present",
     type: "On-site",
     description:
-      "Hands-on Lead Software Engineer architecting recurring billing and split payment systems integrating PayPal, Telebirr, M-PESA, and Eco Bank. Built and optimized .NET payment gateway services for user and sub-user management — roles, permissions, and merchant account hierarchies. Used Groovy for custom payment modules and refactored legacy code improving throughput by 50% and reducing latency by 30%. Promoted to lead two teams (5 developers each) within 4 months.",
+      "Hands-on Tech Lead architecting distributed event-driven microservices with Spring Boot and Kafka for high-volume payment processing. Designed resilient workflows for recurring billing, merchant settlement, split payments, and notifications across PayPal, Telebirr, M-PESA, and Eco Bank. Built asynchronous event pipelines across payment, notification, reporting, and merchant services. Optimized PostgreSQL/MySQL via indexing, query tuning, and transaction management — delivering 50% throughput gains and 30% lower latency. Lead architecture reviews, code quality, and two engineering teams while collaborating with DevOps on containerized cloud deployments.",
     highlights: [
-      ".NET payment gateway — user and sub-user management with role-based access",
-      ".NET optimization — refactored auth and account flows for lower latency",
-      "Eco Bank payment integration alongside major wallets",
-      "Groovy scripting for custom fintech modules",
-      "50% throughput improvement via refactoring",
-      "Led 2 teams of 5 developers each",
-      "Built USSD banking module for loan management",
-      "Built parking management system (Next.js + Spring Boot)",
+      "Event-driven microservices with Spring Boot + Kafka for payment processing",
+      "Recurring billing, split payments, merchant settlement, and notification pipelines",
+      "Payment integrations: PayPal, Telebirr, M-PESA, Eco Bank",
+      ".NET payment gateway — user/sub-user management with merchant hierarchies",
+      "PostgreSQL & MySQL performance tuning — indexing, schema, transactions",
+      "50% throughput improvement and 30% latency reduction via refactoring",
+      "Led 2 development teams; architecture reviews and engineering standards",
+      "Production diagnostics across distributed services, auth, and databases",
+      "Collaborated with DevOps on Dockerized cloud deployments",
     ],
-    technologies: ["Spring Boot", "Java", ".NET", "Groovy", "NestJS", "Next.js", "Kafka", "PostgreSQL", "Docker", "Microservices"],
+    technologies: ["Spring Boot", "Java", ".NET", "Kafka", "PostgreSQL", "MySQL", "Docker", "Microservices", "Next.js", "Groovy"],
   },
   {
     company: "Mindsight Performance Institute (MPI)",
-    role: "Senior Software Engineer, Technical Lead & Frontend Developer",
-    period: "Jul 2025 - Present",
+    role: "Senior Full Stack Developer (Tech Lead)",
+    period: "Feb 2026 - Present",
     type: "Remote",
     description:
-      "Served as Technical Lead and Senior Software Engineer, leading frontend and backend development remotely. Architected scalable UI systems, drove technical strategy, mentored developers, and delivered production-grade features for the performance analytics platform.",
+      "Technical Lead driving frontend and overall architecture for scalable enterprise applications on Microsoft Azure. Designed cloud-native backend services with Azure App Services, VMs, Azure SQL, and Blob Storage. Implemented Microsoft Entra ID (Azure AD) authentication and RBAC. Configured Azure Monitor and Application Insights for production visibility. Led React/Next.js frontend and Spring Boot/.NET backend development, mentored engineers, and established architecture and code-quality standards focused on scalability and production readiness.",
     highlights: [
-      "Led frontend & backend architecture decisions remotely",
-      "Built scalable UI component systems with React/Next.js",
-      "Mentored developers and drove technical strategy",
+      "Tech Lead — frontend & cloud-native architecture decisions",
+      "Azure App Services, VMs, Azure SQL, Blob Storage, Key Vault",
+      "Microsoft Entra ID (Azure AD) auth and role-based access control",
+      "Azure Monitor & Application Insights for production observability",
+      "PostgreSQL design and reporting performance optimization",
+      "React, Next.js, Spring Boot, and .NET delivery",
+      "Mentored developers; architecture reviews and engineering standards",
+      "Collaborated with cloud infrastructure teams on scalable Azure deploys",
     ],
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "NestJS", "Redux"],
+    technologies: ["React", "Next.js", "TypeScript", "Spring Boot", ".NET", "Azure", "Entra ID", "PostgreSQL", "Azure Monitor"],
   },
   {
     company: "BGWG Monster & BGWG Media",
@@ -87,13 +93,16 @@ export const experiences = [
     period: "Apr 2024 - Jul 2024",
     type: "On-site",
     description:
-      "Developed Python scripts automating CIS compliance checks, reducing manual effort by 70%. Built centralized reporting for 10+ third-party apps using Spring Boot APIs and a Next.js dashboard. Implemented OAuth 2.0 and LDAP integration via Keycloak for 500+ internal users.",
+      "Built Python automation for CIS compliance validation across enterprise systems. Centralized reporting for third-party apps with Spring Boot APIs and Next.js dashboards. Implemented Microsoft Entra ID, Keycloak, LDAP, and OAuth 2.0 for identity. Designed Grafana/Prometheus monitoring dashboards and assisted with Azure cloud deployment and infrastructure management.",
     highlights: [
-      "70% reduction in manual compliance effort",
-      "OAuth 2.0 + LDAP for 500+ users",
-      "40% faster incident response with Grafana/Prometheus",
+      "CIS compliance automation — 70% less manual effort",
+      "Centralized reporting for 10+ third-party apps",
+      "Entra ID, Keycloak, LDAP, and OAuth 2.0 identity",
+      "Grafana & Prometheus production observability",
+      "Azure cloud deployment and infrastructure support",
+      "40% faster incident response via monitoring",
     ],
-    technologies: ["Spring Boot", "Python", "Next.js", "Keycloak", "Grafana", "Prometheus"],
+    technologies: ["Spring Boot", "Python", "Next.js", "Keycloak", "Entra ID", "Grafana", "Prometheus", "Azure"],
   },
   {
     company: "Gebeya Inc.",
@@ -101,13 +110,16 @@ export const experiences = [
     period: "Sep 2023 - Jun 2024",
     type: "On-site",
     description:
-      "Developed a USSD banking API handling balance inquiries, transfers, and bill payments. Built a school management system using microservices (Eureka, Spring Cloud Gateway) serving 1,200+ users. Led development of Sebsabi, a survey data collection tool.",
+      "Developed secure USSD banking APIs with Spring Boot, Spring Security, and MySQL. Built microservice architectures using Eureka service discovery and API Gateway. Designed PostgreSQL/MySQL schemas, optimized SQL for production, Dockerized services, and contributed to distributed backends serving 1,200+ users. Led Sebsabi survey data collection tool.",
     highlights: [
-      "USSD banking API for transactions",
-      "School management system for 1,200+ users",
+      "USSD banking API with Spring Security",
+      "Microservices with Eureka + API Gateway",
+      "PostgreSQL/MySQL schema design and query optimization",
+      "Dockerized cloud-native backend services",
+      "Distributed architecture for 1,200+ users",
       "Led Sebsabi capstone project",
     ],
-    technologies: ["Spring Boot", "MySQL", "Eureka", "Spring Cloud Gateway", "React", "Flutter"],
+    technologies: ["Spring Boot", "MySQL", "PostgreSQL", "Eureka", "Spring Cloud Gateway", "Docker", "React", "Flutter"],
   },
   {
     company: "Freelance (Upwork)",
@@ -161,61 +173,62 @@ export const skills = {
     { name: "JavaScript", level: 95 },
     { name: "HTML/CSS", level: 95 },
     { name: "Tailwind CSS", level: 90 },
-    { name: "NgRx", level: 75 },
     { name: "GraphQL", level: 80 },
     { name: "Figma", level: 80 },
   ],
   backend: [
     { name: "Java", level: 95 },
     { name: "Spring Boot", level: 95 },
-    { name: ".NET", level: 80 },
+    { name: "C# / .NET", level: 85 },
+    { name: "ASP.NET Core", level: 80 },
     { name: "NestJS", level: 85 },
-    { name: "PHP", level: 85 },
-    { name: "Laravel", level: 85 },
-    { name: "Joomla", level: 90 },
-    { name: "WordPress", level: 80 },
-    { name: "Groovy", level: 80 },
-    { name: "Kafka", level: 80 },
+    { name: "Kafka", level: 85 },
     { name: "Microservices", level: 90 },
+    { name: "Event-Driven Architecture", level: 85 },
     { name: "REST APIs", level: 95 },
     { name: "Python", level: 75 },
+    { name: "PHP / Laravel", level: 85 },
+    { name: "Groovy", level: 80 },
   ],
   devops: [
     { name: "Docker", level: 85 },
     { name: "Kubernetes", level: 75 },
-    { name: "Jenkins", level: 75 },
-    { name: "Git/GitLab", level: 95 },
+    { name: "Terraform", level: 70 },
+    { name: "Microsoft Azure", level: 80 },
+    { name: "Jenkins / GitLab CI", level: 75 },
     { name: "PostgreSQL", level: 90 },
-    { name: "MySQL", level: 90 },
+    { name: "MySQL / SQL Server", level: 85 },
     { name: "Redis", level: 80 },
-    { name: "Keycloak", level: 80 },
-    { name: "Grafana", level: 75 },
+    { name: "Grafana / Prometheus", level: 80 },
+    { name: "Azure Monitor", level: 75 },
+    { name: "Keycloak / Entra ID", level: 80 },
+    { name: "Cursor / Copilot", level: 85 },
   ],
 };
 
 export const services = [
   {
-    title: "Full-Stack Web Development",
+    title: "Distributed Systems & Event-Driven Design",
     description:
-      "End-to-end web application development from responsive React/Next.js frontends to scalable Spring Boot and Node.js backend APIs.",
+      "Scalable microservices with Kafka, resilient payment workflows, asynchronous pipelines, and production-grade consistency patterns for high-throughput fintech systems.",
     icon: "code",
   },
   {
-    title: "Fintech & Payment Integration",
+    title: "Fintech & Payment Platforms",
     description:
-      "Payment gateway integrations (M-PESA, Telebirr, PayPal, Stripe), .NET user and sub-user management, recurring billing systems, and financial transaction platforms.",
+      "Payment gateway integrations (M-PESA, Telebirr, PayPal, Eco Bank), recurring billing, split payments, merchant settlement, and secure transaction platforms.",
     icon: "payment",
   },
   {
-    title: "CMS & E-Commerce Development",
+    title: "Cloud-Native & Observability",
     description:
-      "Senior CMS Developer — Joomla, WordPress, and Laravel-based websites with SEO optimization, custom modules, e-commerce, and performance tuning. Top-rated on Upwork.",
+      "Azure cloud services, Docker/Kubernetes collaboration, Terraform familiarity, and production monitoring with Grafana, Prometheus, and Application Insights.",
     icon: "store",
   },
   {
-    title: "Technical Leadership & Consultation",
+    title: "Technical Leadership & Mentorship",
     description:
-      "Architecture reviews, performance optimization, code audits, and team mentoring. Led teams of 5+ developers at Arifpay.",
+      "Hands-on Tech Lead — architecture reviews, code quality standards, AI-assisted workflows with rigorous review, and mentoring teams of 5+ engineers.",
     icon: "leadership",
   },
 ];
@@ -243,25 +256,25 @@ export const projects: ProjectDetail[] = [
   {
     title: "Arifpay Payment Platform",
     description:
-      "Recurring billing and split payment system integrating PayPal, Telebirr, M-PESA, and Eco Bank. .NET gateway services handle user and sub-user management; legacy refactoring delivered 50% throughput gains and 30% lower latency.",
+      "Distributed event-driven payment platform with Spring Boot + Kafka — recurring billing, split payments, merchant settlement, and multi-provider integrations (PayPal, Telebirr, M-PESA, Eco Bank). 50% throughput gains and 30% lower latency.",
     longDescription:
-      "Enterprise-grade fintech platform powering recurring billing and split payment workflows across multiple payment providers. Event-driven microservices integrate PayPal, Telebirr, M-PESA, and Eco Bank into a unified API, with Groovy used for complex scripting and custom payment modules. Hands-on .NET services power payment gateway user and sub-user management — merchant hierarchies, role-based permissions, and optimized account flows. Includes a USSD banking module for loan management and a parking management subsystem.",
+      "Enterprise fintech platform built as distributed event-driven microservices with Spring Boot and Kafka for high-volume payment processing. Asynchronous pipelines loosely couple payment processing, notifications, reporting, and merchant management. Resilient workflows cover recurring billing, merchant settlement, split payments, and payment notifications across PayPal, Telebirr, M-PESA, and Eco Bank. Hands-on .NET gateway services handle user/sub-user management and merchant hierarchies. PostgreSQL and MySQL optimized through indexing, query tuning, and transaction management — delivering 50% throughput improvement and 30% latency reduction. Includes USSD banking for loan management and a parking management subsystem.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
     images: ["https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"],
-    technologies: ["Spring Boot", "Java", ".NET", "Groovy", "Kafka", "PostgreSQL", "Docker", "Microservices"],
+    technologies: ["Spring Boot", "Java", ".NET", "Kafka", "PostgreSQL", "MySQL", "Docker", "Microservices", "Groovy"],
     liveUrl: "https://arifpay.net",
     githubUrl: "",
     featured: true,
     status: "deployed",
     type: "app",
     features: [
-      "Recurring billing with configurable payment schedules",
-      "Split payment system across multiple providers",
+      "Event-driven microservices with Kafka for high-volume payments",
+      "Recurring billing, split payments, and merchant settlement",
       "PayPal, Telebirr, M-PESA, and Eco Bank integration",
-      ".NET payment gateway — user and sub-user management with merchant hierarchies",
-      ".NET optimization — faster auth and account lookup on high-traffic flows",
-      "Groovy scripting for custom payment modules",
-      "50% throughput improvement via legacy code refactoring",
+      "Asynchronous pipelines across payment, notifications, reporting",
+      ".NET gateway — user/sub-user management with merchant hierarchies",
+      "PostgreSQL/MySQL indexing, query tuning, and transaction management",
+      "50% throughput improvement via legacy refactoring",
       "30% latency reduction through optimization",
       "USSD banking module for loan management",
       "Parking management subsystem with embedded payments",
@@ -272,7 +285,7 @@ export const projects: ProjectDetail[] = [
       "Role-based access for internal dashboards",
     ],
     architecture:
-      "Event-driven microservices architecture using Kafka for inter-service communication, Spring Boot for each service, and PostgreSQL for persistence. Deployed via Docker with horizontal scaling support.",
+      "Event-driven microservices with Kafka for inter-service communication, Spring Boot services, and PostgreSQL/MySQL persistence. Asynchronous pipelines for loosely coupled payment, notification, and merchant domains. Dockerized deployments with horizontal scaling; collaborated with DevOps on cloud infrastructure.",
   },
   {
     title: "Ticketr — Event Ticketing Platform",
@@ -554,12 +567,12 @@ export const projects: ProjectDetail[] = [
   {
     title: "Cybersecurity Compliance Dashboard",
     description:
-      "Centralized reporting dashboard for 10+ third-party apps with OAuth 2.0/LDAP auth via Keycloak, serving 500+ internal users at Safaricom.",
+      "Centralized reporting for 10+ apps with Entra ID/Keycloak/OAuth, Grafana/Prometheus observability, and Azure deployment support — serving 500+ users at Safaricom.",
     longDescription:
-      "Enterprise cybersecurity compliance dashboard built during internship at Safaricom ET. Centralizes reporting from 10+ third-party applications with unified OAuth 2.0 and LDAP authentication via Keycloak, serving 500+ internal users. Automated CIS compliance checks reduced manual effort by 70%.",
+      "Enterprise cybersecurity compliance dashboard built at Safaricom ET. Centralizes reporting from 10+ third-party applications with Microsoft Entra ID, Keycloak, LDAP, and OAuth 2.0 identity. Grafana and Prometheus dashboards improved operational visibility and incident response. Python automation for CIS compliance validation reduced manual effort by 70%. Assisted with Azure cloud deployment and infrastructure management.",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
     images: ["https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80"],
-    technologies: ["Spring Boot", "Next.js", "Keycloak", "Grafana", "Python"],
+    technologies: ["Spring Boot", "Next.js", "Keycloak", "Entra ID", "Grafana", "Prometheus", "Python", "Azure"],
     liveUrl: "",
     githubUrl: "",
     featured: false,
@@ -568,12 +581,13 @@ export const projects: ProjectDetail[] = [
     features: [
       "Centralized reporting for 10+ third-party apps",
       "Automated CIS compliance checks (70% effort reduction)",
-      "OAuth 2.0 + LDAP integration for 500+ users",
+      "Entra ID, Keycloak, LDAP, and OAuth 2.0 identity",
       "Grafana/Prometheus monitoring (40% faster incident response)",
-      "Python automation scripts for compliance auditing",
+      "Azure cloud deployment and infrastructure support",
+      "Python automation for compliance auditing",
     ],
     security: [
-      "OAuth 2.0 and LDAP via Keycloak",
+      "Microsoft Entra ID + Keycloak + LDAP + OAuth 2.0",
       "CIS benchmark automated compliance checks",
       "Centralized identity management for 500+ users",
     ],

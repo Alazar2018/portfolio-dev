@@ -15,7 +15,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Alazar Tilahun",
   url: "https://alazar-dev.vercel.app",
-  jobTitle: "Senior Full Stack Engineer",
+  jobTitle: "Senior Full Stack Engineer | Tech Lead",
   worksFor: [
     { "@type": "Organization", name: "Arifpay Financial Technologies" },
     { "@type": "Organization", name: "Mindsight Performance Institute" },

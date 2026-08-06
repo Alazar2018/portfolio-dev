@@ -171,7 +171,7 @@ export default function Contact() {
                 <span className="text-sm font-medium text-accent">Currently Available</span>
               </div>
               <p className="text-sm text-muted">
-                Open to freelance projects and full-time opportunities. Let&apos;s talk!
+                Open to Tech Lead and full-stack roles — fintech, distributed systems, cloud-native. Let&apos;s talk!
               </p>
             </div>
           </AnimatedSection>

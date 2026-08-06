@@ -29,19 +29,23 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Alazar Tilahun | Senior Full Stack Engineer",
+  title: "Alazar Tilahun | Senior Full Stack Engineer | Tech Lead",
   description:
-    "Senior Full Stack Engineer with 5+ years of experience building scalable fintech systems. Specialized in Java/Spring Boot, Next.js/React, and payment integrations. Available for freelance.",
+    "Senior Technical Lead and Full Stack Engineer with 6+ years designing scalable fintech platforms, distributed systems, and cloud-native apps. Java/Spring Boot, .NET, Kafka, Azure, Next.js/React.",
   keywords: [
     "Alazar Tilahun",
+    "technical lead",
     "full-stack developer",
+    "distributed systems",
     "software engineer",
     "Spring Boot",
+    "Kafka",
     "React",
     "Next.js",
     "Java",
+    ".NET",
+    "Azure",
     "fintech developer",
-    "freelance developer Ethiopia",
     "payment integration",
     "web developer Addis Ababa",
   ],
@@ -52,9 +56,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.svg", type: "image/svg+xml" }],
   },
   openGraph: {
-    title: "Alazar Tilahun | Senior Full Stack Engineer",
+    title: "Alazar Tilahun | Senior Full Stack Engineer | Tech Lead",
     description:
-      "Senior Full Stack Engineer building scalable fintech systems and web applications. Specialized in Java/Spring Boot, Next.js/React, and payment integrations.",
+      "Senior Technical Lead building scalable fintech platforms and distributed systems. Java/Spring Boot, .NET, Kafka, Azure, Next.js/React.",
     type: "website",
     locale: "en_US",
     url: siteUrl,
@@ -62,9 +66,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alazar Tilahun | Senior Full Stack Engineer",
+    title: "Alazar Tilahun | Senior Full Stack Engineer | Tech Lead",
     description:
-      "Senior Full Stack Engineer building scalable fintech systems. Specialized in Java/Spring Boot, Next.js/React, and payment integrations.",
+      "Senior Technical Lead building fintech platforms and distributed systems. Spring Boot, Kafka, Azure, Next.js.",
   },
   robots: {
     index: true,

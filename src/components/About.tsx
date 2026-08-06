@@ -21,7 +21,7 @@ export default function About() {
         <SectionHeading
           label="About Me"
           title="Turning Ideas Into Reality"
-          subtitle="A passionate engineer who loves building fintech systems and scalable web apps"
+          subtitle="Hands-on Tech Lead building fintech platforms, distributed systems, and cloud-native apps"
         />
 
         <div className="grid lg:grid-cols-5 gap-12 items-center">

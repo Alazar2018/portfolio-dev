@@ -181,7 +181,7 @@ export default function Hero() {
               />
             </div>
             <div className="absolute -bottom-2 -right-2 px-4 py-2 bg-card border border-card-border rounded-xl text-xs font-medium shadow-lg">
-              <span className="text-accent">5+</span> Years Experience
+              <span className="text-accent">6+</span> Years Experience
             </div>
           </div>
         </motion.div>

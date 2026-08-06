@@ -14,7 +14,7 @@ type Category = keyof typeof skills;
 const categoryConfig: Record<Category, { label: string; icon: React.ComponentType<{ sx?: object; className?: string }> }> = {
   frontend: { label: "Frontend", icon: WebIcon },
   backend: { label: "Backend", icon: StorageIcon },
-  devops: { label: "DevOps & Tools", icon: BuildCircleIcon },
+  devops: { label: "DevOps & Cloud", icon: BuildCircleIcon },
 };
 
 export default function Skills() {
@@ -27,7 +27,7 @@ export default function Skills() {
         <SectionHeading
           label="Tech Stack"
           title="Skills & Technologies"
-          subtitle="The tools and technologies I use to bring ideas to life"
+          subtitle="Languages, frameworks, and platforms I use to build durable production systems"
         />
 
         <AnimatedSection delay={0.1}>

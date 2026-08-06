@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import CodeIcon from "@mui/icons-material/Code";
 import PaymentsIcon from "@mui/icons-material/Payments";
-import StorefrontIcon from "@mui/icons-material/Storefront";
+import CloudIcon from "@mui/icons-material/Cloud";
 import GroupsIcon from "@mui/icons-material/Groups";
 import { services } from "@/lib/data";
 import AnimatedSection from "./AnimatedSection";
@@ -12,7 +12,7 @@ import SectionHeading from "./SectionHeading";
 const iconMap: Record<string, React.ComponentType<{ sx?: object; className?: string }>> = {
   code: CodeIcon,
   payment: PaymentsIcon,
-  store: StorefrontIcon,
+  store: CloudIcon,
   leadership: GroupsIcon,
 };
 
@@ -23,8 +23,8 @@ export default function Services() {
       <div className="max-w-6xl mx-auto relative z-10">
         <SectionHeading
           label="What I Do"
-          title="Services I Offer"
-          subtitle="From concept to deployment, I provide end-to-end solutions tailored to your needs"
+          title="How I Deliver"
+          subtitle="Hands-on technical leadership across distributed systems, fintech, and cloud-native platforms"
         />
 
         <div className="grid sm:grid-cols-2 gap-6">
